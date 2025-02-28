@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CRUDApp</string>
+
+    <!-- Agregar este array para el Spinner de sexo -->
+    <string-array name="sexo_array">
+        <item>Masculino</item>
+        <item>Femenino</item>
+        <item>Otro</item>
+    </string-array>
+</resources>

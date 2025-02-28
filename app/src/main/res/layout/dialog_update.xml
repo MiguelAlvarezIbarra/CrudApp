@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/dialogClave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Clave"
+        android:inputType="none"
+        android:focusable="false"
+        android:clickable="false"
+        android:background="@android:color/transparent"/>
+
+    <EditText
+        android:id="@+id/dialogUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Usuario" />
+
+    <EditText
+        android:id="@+id/dialogGmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Gmail" />
+
+    <EditText
+        android:id="@+id/dialogContrasena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/dialogEdad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/dialogCiudad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/dialogSexo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:inputType="textPassword" />
+
+</LinearLayout>

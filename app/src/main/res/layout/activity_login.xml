@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Fondo con GIF -->
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/fondoGif"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fondo"
+        android:adjustViewBounds="true"/>
+
+    <!-- Contenedor para el formulario -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="20dp"
+        android:background="@android:color/transparent"
+        android:layout_alignParentTop="true">
+
+        <EditText
+            android:id="@+id/editUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Usuario"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_background"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="15dp"/>
+
+        <EditText
+            android:id="@+id/editContrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_background"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Iniciar Sesión"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_background"
+            android:padding="12dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</RelativeLayout>

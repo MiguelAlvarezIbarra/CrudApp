@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/backgroundGif"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <EditText
+            android:id="@+id/editClave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Clave"
+            android:background="@drawable/estilo_edittext"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Usuario"
+            android:background="@drawable/estilo_edittext"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editGmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Gmail"
+            android:background="@drawable/estilo_edittext"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editContrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:background="@drawable/estilo_edittext"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editEdad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Edad"
+            android:inputType="number"
+            android:background="@drawable/estilo_edittext"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editCiudad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ciudad"
+            android:background="@drawable/estilo_edittext"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/spinnerSexo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Sexo (M/F)"
+            android:background="@drawable/estilo_edittext"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnInsertar"
+            style="@style/EstiloBoton"
+            android:text="Insertar" />
+
+        <Button
+            android:id="@+id/btnConsultar"
+            style="@style/EstiloBoton"
+            android:text="Consultar" />
+
+        <Button
+            android:id="@+id/btnMostrarTodos"
+            style="@style/EstiloBoton"
+            android:text="Mostrar Todos" />
+
+        <Button
+            android:id="@+id/btnBorrar"
+            style="@style/EstiloBoton"
+            android:text="Borrar" />
+
+        <Button
+            android:id="@+id/btnModificar"
+            style="@style/EstiloBoton"
+            android:text="Modificar" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            style="@style/EstiloBoton"
+            android:text="Cerrar Sesión" />
+
+    </LinearLayout>
+</RelativeLayout>
