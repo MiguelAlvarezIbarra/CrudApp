@@ -4,7 +4,7 @@ import android.content.ContentValues
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
-z
+
 internal class DatabaseHelper(context: Context?) :
     SQLiteOpenHelper(context, "Users.db", null, 2) {
     override fun onCreate(db: SQLiteDatabase) {
