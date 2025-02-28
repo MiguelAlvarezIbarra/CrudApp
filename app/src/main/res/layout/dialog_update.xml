@@ -38,21 +38,17 @@
         android:id="@+id/dialogEdad"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Contraseña"
-        android:inputType="textPassword" />
+        android:hint="Edad"/>
 
     <EditText
         android:id="@+id/dialogCiudad"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Contraseña"
-        android:inputType="textPassword" />
+        android:hint="Ciudad"/>
 
-    <EditText
+    <Spinner
         android:id="@+id/dialogSexo"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Contraseña"
-        android:inputType="textPassword" />
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

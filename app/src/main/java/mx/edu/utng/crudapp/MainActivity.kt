@@ -199,7 +199,13 @@ class MainActivity : AppCompatActivity() {
         dialogEdad.setText(user["edad"])
         dialogCiudad.setText(user["ciudad"])
 
-        val sexoPosition = (dialogSexo.adapter as ArrayAdapter<String>).getPosition(user["sexo"])
+        // **Configurar el Spinner en el AlertDialog**
+        val adapter = ArrayAdapter.createFromResource(this, R.array.sexo_array, android.R.layout.simple_spinner_item)
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        dialogSexo.adapter = adapter
+
+        // **Seleccionar el valor actual**
+        val sexoPosition = adapter.getPosition(user["sexo"])
         dialogSexo.setSelection(sexoPosition)
 
         AlertDialog.Builder(this)
@@ -219,6 +225,7 @@ class MainActivity : AppCompatActivity() {
             .setNegativeButton("Cancelar", null)
             .show()
     }
+
 
     private fun cerrarSesion() {
         getSharedPreferences("LoginPrefs", MODE_PRIVATE).edit().putBoolean("isLoggedIn", false).apply()
